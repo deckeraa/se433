@@ -1,10 +1,29 @@
 <html>
 <body>
   <h1>Standards</h1>
+  <!-- <marquee>SE 4330 Project Standards Document</marquee> -->
   <ol>
-    <li>If artifacts are captured using Microsoft Word, the required font is Comic Sans MS.</li>
+    <li>If artifacts are captured using Microsoft Word, then
+      <ul>
+        <li>required font is Comic Sans MS.</li>
+        <li>all titles must be generated using WordArt, with at least a two-color gradient and 3d or shadow effects.</li>
+      </ul>
+    <li>All requirements must be of tweetable length.</li>
   </ol>
   <h2>Test Document Standards</h2>
-  The tests in the test document shall have ...
+  The tests in the test document shall have
+
+  <table>
+    <tr><td></td><td>Integration Test for ARINC 429 Toaster</td></tr>
+    <tr><td>Step #</td><td>Directions</td><td>Test</td><td>Passed/Failed</td><td>Related Req's</td></tr>
+    <tr><td>1.0</td><td>Check the hardware connections from the toaster to the ARINC 429 bus.</td><td>Are connections solid?</td><td><input type="checkbox">Passed</input> </td></tr>
+    <tr><td>1.1</td><td>Plug the toaster into a NEMA 5-15 Type B 120V AC socket.</td></tr>
+    <tr><td>1.2</td><td>Power the toater on using the main power switch.</td><td>Is the power indicator light lit?</td><td><input type="checkbox">Passed</input> </td></tr>
+    <tr><td>2.0</td><td>Insert one piece of "Oven Fresh Whole Wheat Bread" ($0.99/loaf at Aldi's) into each slot of the toaster. It is imperative that each slice of bread be positioned correctly, with the top of the bread facing up, and each broad side facing directly towards the heating coils.</td></tr>
+    <tr><td>2.1</td><td>Lower the toaster activation lever located on the anterior side of the toaster.</td></tr>
+    <tr><td>2.2</td><td>Wait 20 seconds, then use an infrared thermometer to check to temperature of each coil.</td><td>Is each coil between 150 and 200 degrees Farhrenheit, inclusive?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R3.8">R3.8</a></tr>
+    <tr><td>3.0</td><td>Once toasting is complete, remove from device and consume each slice.</td><td>Do all of the slices taste good?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R1.0">R1.0</a></tr>
+  </table>
+
 </body>
 </html>
