@@ -60,9 +60,9 @@
     <tr><td>Step #</td><td>Directions</td><td>Test</td><td>Passed/Failed</td><td>Related Req's</td></tr>
     <tr><td>1.0</td><td>Check the hardware connections from the toaster to the ARINC 429 bus.</td><td>Are connections solid?</td><td><input type="checkbox">Passed</input> </td></tr>
     <tr><td>1.1</td><td>Plug the toaster into a NEMA 5-15 Type B 120V AC socket.</td></tr>
-    <tr><td>1.2</td><td>Power the toaster on using the main power switch.</td><td>Is the power indicator light lit?</td><td><input type="checkbox">Passed</input> </td></tr>
+    <tr><td>1.2</td><td>Power the toaster on using the main power switch.</td><td>Is the power indicator light lit?</td><td><input type="checkbox">Passed</input> </td><td><a href="#IO3.0">IO3.0</a></td></tr>
     <tr><td>2.0</td><td>Insert one piece of "L'Oven Fresh Whole Wheat Bread" ($0.99/loaf at Aldi's) into each slot of the toaster. It is imperative that each slice of bread be positioned correctly, with the top of the bread facing up, and each broad side facing directly towards the heating coils.</td><td></td><td></td><td><a href="#R2.9">R1.9</a></td></tr>
-    <tr><td>2.1</td><td>Lower the toaster activation lever located on the anterior side of the toaster.</td></tr>
+    <tr><td>2.1</td><td>Lower the toaster activation lever located on the anterior side of the toaster.</td><td>Did the toaster accept the bread as input?</td><td><input type="checkbox">Passed</input><td><a href="#IO3.0">IO3.0</a>, <a href="#IO4.0">IO4.0</a></td></tr>
     <tr><td>2.2</td><td>Wait 20 seconds, then use an infrared thermometer to check to temperature of each coil.</td><td>Is each coil between 150 and 200 degrees Fahrenheit, inclusive?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R3.8">R3.8</a></tr>
     <tr><td>3.0</td><td>Once toasting is complete, remove from device and consume each slice.</td><td>Do all of the slices taste good?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R2.0">R2.0</a></tr>
   </table>
