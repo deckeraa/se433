@@ -13,6 +13,34 @@
       </ul>
     <li>All requirements must be of tweetable length.</li>
   </ol>
+  <br/>
+  <h2>Requirement Standards</h2>
+  <p>
+  The requirements document will be in a list.  The list will have sections to keep related requirements together.<br/>
+  Each requirement shall have a label that can be linked to from other documents (e.g. the test document).<br/>
+  Each requirement shall start with "The &lt;item&gt; shall", (e.g. "The system shall").<br/>
+  If a requirement is related to any other requirements, a note with links to those requirements needs to be placed at the end of that requirement.<br/>
+  Each requirement shall be small and concise to reduce complexity.
+  <br/>
+  See an example below:
+  </p>
+  <p>
+  <h3><a name="Reqs">Requirements</a></h3>
+  <h4><a name="GenReqs">General Requirements</a></h4>
+  <a name="R1.0">R1.0 - The system shall be able to create a slice of toast, supposedly from a piece of bread.</a><br/>
+  <a name="R1.9">R1.9 - The system shall heat a slice of bread to a such a significant degree that becomes toasted.</a><br/>
+  <a name="R2.0">R2.0 - The system shall be able to create slices of toast that are consumable by humans.</a><br/>
+  <a name="R3.0">R3.0 - The system shall use coils to heat the bread to create toast.</a><br/>
+  <a name="R3.8">R3.8 - The system shall be able to heat each coil between 150 and 200 degrees Fahrenheit.</a><br/>
+  <h4><a name="IOReqs">Input/Output Requirements</a></h4>
+  <a name="IO1.0">IO1.0 - The system shall be able to consume a slice of bread as input.</a><br/>
+  <a name="IO2.0">IO2.0 - The system shall be able to produce a slice of toast as output, given that a piece of bread has been given as input.  (See <a href="#IO1.0">IO1.0</a>)</a><br/>
+  <a name="IO3.0">IO3.0 - The system shall have a main power switch that turns the toaster on.</a><br/>
+  <a name="IO4.0">IO4.0 - The system shall have an activation lever on its anterior side, which when pressed will cause the system to consume a piece of bread if in the input slot.  (See <a href="#IO1.0">IO1.0</a>)</a><br/>
+  <h4><a name="SafeReqs">Safety Requirements</a></h4>
+  <a name="S1.0">S1.0 - The system shall be completely unsafe, considering the heat generated from the coils.  (See <a href="#R3.0">R3.0</a> and <a href="#R3.8">R3.8</a>)</a><br/>
+  </p>
+  <br/>
   <h2>Test Document Standards</h2>
   <p>
     The tests in the test document shall be in a table
@@ -32,11 +60,11 @@
     <tr><td>Step #</td><td>Directions</td><td>Test</td><td>Passed/Failed</td><td>Related Req's</td></tr>
     <tr><td>1.0</td><td>Check the hardware connections from the toaster to the ARINC 429 bus.</td><td>Are connections solid?</td><td><input type="checkbox">Passed</input> </td></tr>
     <tr><td>1.1</td><td>Plug the toaster into a NEMA 5-15 Type B 120V AC socket.</td></tr>
-    <tr><td>1.2</td><td>Power the toater on using the main power switch.</td><td>Is the power indicator light lit?</td><td><input type="checkbox">Passed</input> </td></tr>
-    <tr><td>2.0</td><td>Insert one piece of "L'Oven Fresh Whole Wheat Bread" ($0.99/loaf at Aldi's) into each slot of the toaster. It is imperative that each slice of bread be positioned correctly, with the top of the bread facing up, and each broad side facing directly towards the heating coils.</td><td></td><td></td><td><a href="#R2.9">R2.9</a></td></tr>
+    <tr><td>1.2</td><td>Power the toaster on using the main power switch.</td><td>Is the power indicator light lit?</td><td><input type="checkbox">Passed</input> </td></tr>
+    <tr><td>2.0</td><td>Insert one piece of "L'Oven Fresh Whole Wheat Bread" ($0.99/loaf at Aldi's) into each slot of the toaster. It is imperative that each slice of bread be positioned correctly, with the top of the bread facing up, and each broad side facing directly towards the heating coils.</td><td></td><td></td><td><a href="#R2.9">R1.9</a></td></tr>
     <tr><td>2.1</td><td>Lower the toaster activation lever located on the anterior side of the toaster.</td></tr>
-    <tr><td>2.2</td><td>Wait 20 seconds, then use an infrared thermometer to check to temperature of each coil.</td><td>Is each coil between 150 and 200 degrees Farhrenheit, inclusive?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R3.8">R3.8</a></tr>
-    <tr><td>3.0</td><td>Once toasting is complete, remove from device and consume each slice.</td><td>Do all of the slices taste good?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R1.0">R1.0</a></tr>
+    <tr><td>2.2</td><td>Wait 20 seconds, then use an infrared thermometer to check to temperature of each coil.</td><td>Is each coil between 150 and 200 degrees Fahrenheit, inclusive?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R3.8">R3.8</a></tr>
+    <tr><td>3.0</td><td>Once toasting is complete, remove from device and consume each slice.</td><td>Do all of the slices taste good?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R2.0">R2.0</a></tr>
   </table>
 
 </body>
