@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="pagestyle.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="pagestyle.css"/> -->
 </head>
 <body>
   <h1>Standards</h1>
@@ -57,5 +57,31 @@
     <tr><td>3.0</td><td>Once toasting is complete, remove from device and consume each slice.</td><td>Do all of the slices taste good?</td><td><input type="checkbox">Passed</input> </td><td><a href="#R2.0">R2.0</a></tr>
   </table>
 
+  <h2>C</h2>
+  <h3>Indentation</h3>
+  <p>
+    Indentation shall be 3 spaces.  All code blocks should be indented, as well as single line conditional bodies.
+    Curly braces shall be indented to the same level as the statement, conditional, or function header which precedes them.
+    Preprocessor macros shall always be aligned to the first column.
+    Multiline statements should be indented at least 6 spaces more than the first line.
+  </p>
+  <h3>Newlines</h3>
+  <p>
+    All semicolons and curly braces shall be followed by a newline, except in for loop conditions.
+    Single statement conditional bodies may be on the same line as the conditional
+    An additional 1-4 newlines may be used between statements to establish logical separation.
+    Function headers must be on the line after the end of the corresponding comment block.
+  </p>
+  <h3>Comments</h3>
+  <p>
+    Multiline comments should use /**/ style comments, single line comments may use either // (if using C99) or /**/.
+    Every function should have a comment explaining what it does, and every struct should have a comment with a short description of it.
+    Every include should have a short justification for inclusion before it.
+    Comments do not need to use complete sentences but should be readable.
+  </p>
+  <h3>Naming</h3>
+  <p>
+    All variables, structs, defines, typedefs, and files shall have sane names.  Typedefs shall be suffixed with _t, including typedefed structs.  Functions, types, and variables which belong to a specific module shall be prefixed by the abbreviated module name followed by an underscore.  CamelCase shall be used for functions, and underscores shall be used between words for public variables.  Public functions and variables shall begin with a capital letter, and private variables and functions shall begin with a lower case variable.  Private functions and variables should only appear in header files when part of a public struct.
+  </p>
 </body>
 </html>
